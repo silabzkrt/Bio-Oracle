@@ -6,7 +6,7 @@
 ![OpenCV](https://img.shields.io/badge/Vision-OpenCV-red.svg?style=for-the-badge&logo=opencv)
 
 <p align="center">
-  <img src="docs/logo.png" alt="Bio-Oracle Logo" width="600">
+  <img src="Gemini_Generated_Image_qdjoy2qdjoy2qdjo.png" alt="Bio-Oracle Logo" width="600">
   <br>
   <em>A Python-based Digital Twin engine merging Computer Vision, Machine Learning, and Gamification.</em>
 </p>
