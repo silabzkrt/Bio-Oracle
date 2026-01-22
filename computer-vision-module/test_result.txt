@@ -1,0 +1,848 @@
+Testing 420 images from EMDS5-Original
+
+Processing: EMDS5-g01-01.png
+  ✓ Cell detected at (216, 124) with size 68x79
+Processing: EMDS5-g01-02.png
+  ✓ Cell detected at (202, 145) with size 84x74
+Processing: EMDS5-g01-03.png
+  ✓ Cell detected at (12, 9) with size 482x320
+Processing: EMDS5-g01-04.png
+  ✓ Cell detected at (257, 172) with size 35x37
+Processing: EMDS5-g01-05.png
+  ✓ Cell detected at (10, 6) with size 484x326
+Processing: EMDS5-g01-06.png
+  ✓ Cell detected at (11, 10) with size 484x319
+Processing: EMDS5-g01-07.png
+  ✓ Cell detected at (285, 156) with size 28x52
+Processing: EMDS5-g01-08.png
+  ✓ Cell detected at (248, 138) with size 35x35
+Processing: EMDS5-g01-09.png
+  ✓ Cell detected at (230, 159) with size 70x74
+Processing: EMDS5-g01-10.png
+  ✓ Cell detected at (6, 5) with size 493x328
+Processing: EMDS5-g01-11.png
+  ✓ Cell detected at (2, 1) with size 489x332
+Processing: EMDS5-g01-12.png
+  ✓ Cell detected at (369, 164) with size 23x22
+Processing: EMDS5-g01-13.png
+  ✓ Cell detected at (10, 2) with size 492x330
+Processing: EMDS5-g01-14.png
+  ✓ Cell detected at (9, 7) with size 485x324
+Processing: EMDS5-g01-15.png
+  ✓ Cell detected at (10, 2) with size 492x331
+Processing: EMDS5-g01-16.png
+  ✓ Cell detected at (12, 9) with size 482x320
+Processing: EMDS5-g01-17.png
+  ✓ Cell detected at (12, 9) with size 482x320
+Processing: EMDS5-g01-18.png
+  ✓ Cell detected at (7, 5) with size 492x328
+Processing: EMDS5-g01-19.png
+  ✓ Cell detected at (7, 5) with size 490x328
+Processing: EMDS5-g01-20.png
+  ✓ Cell detected at (185, 165) with size 119x69
+Processing: EMDS5-g02-01.png
+  ✓ Cell detected at (12, 10) with size 481x318
+Processing: EMDS5-g02-02.png
+  ✓ Cell detected at (12, 11) with size 480x316
+Processing: EMDS5-g02-03.png
+  ✓ Cell detected at (171, 52) with size 17x26
+Processing: EMDS5-g02-04.png
+  ✓ Cell detected at (184, 78) with size 151x143
+Processing: EMDS5-g02-05.png
+  ✓ Cell detected at (150, 67) with size 184x184
+Processing: EMDS5-g02-06.png
+  ✓ Cell detected at (36, 236) with size 30x20
+Processing: EMDS5-g02-07.png
+  ✓ Cell detected at (174, 92) with size 146x153
+Processing: EMDS5-g02-08.png
+  ✓ Cell detected at (132, 65) with size 241x237
+Processing: EMDS5-g02-09.png
+  ✓ Cell detected at (303, 98) with size 39x37
+Processing: EMDS5-g02-10.png
+  ✓ Cell detected at (116, 37) with size 197x280
+Processing: EMDS5-g02-11.png
+  ✓ Cell detected at (170, 54) with size 219x222
+Processing: EMDS5-g02-12.png
+  ✓ Cell detected at (133, 41) with size 236x261
+Processing: EMDS5-g02-13.png
+  ✓ Cell detected at (12, 10) with size 481x318
+Processing: EMDS5-g02-14.png
+  ✓ Cell detected at (12, 10) with size 481x318
+Processing: EMDS5-g02-15.png
+  ✓ Cell detected at (12, 10) with size 481x318
+Processing: EMDS5-g02-16.png
+  ✓ Cell detected at (12, 11) with size 480x316
+Processing: EMDS5-g02-17.png
+  ✓ Cell detected at (95, 16) with size 275x303
+Processing: EMDS5-g02-18.png
+  ✓ Cell detected at (148, 41) with size 179x206
+Processing: EMDS5-g02-19.png
+  ✓ Cell detected at (29, 41) with size 345x240
+Processing: EMDS5-g02-20.png
+  ✓ Cell detected at (201, 76) with size 177x195
+Processing: EMDS5-g03-01.png
+  ✓ Cell detected at (1, 5) with size 493x331
+Processing: EMDS5-g03-02.png
+  ✓ Cell detected at (201, 158) with size 47x60
+Processing: EMDS5-g03-03.png
+  ✓ Cell detected at (170, 181) with size 50x33
+Processing: EMDS5-g03-04.png
+  ✓ Cell detected at (1, 5) with size 493x331
+Processing: EMDS5-g03-05.png
+  ✓ Cell detected at (11, 9) with size 484x320
+Processing: EMDS5-g03-06.png
+  ✓ Cell detected at (11, 9) with size 484x320
+Processing: EMDS5-g03-07.png
+  ✓ Cell detected at (10, 9) with size 485x320
+Processing: EMDS5-g03-08.png
+  ✓ Cell detected at (251, 159) with size 85x30
+Processing: EMDS5-g03-09.png
+  ✓ Cell detected at (249, 106) with size 60x87
+Processing: EMDS5-g03-10.png
+  ✓ Cell detected at (13, 10) with size 481x317
+Processing: EMDS5-g03-11.png
+  ✓ Cell detected at (11, 9) with size 485x320
+Processing: EMDS5-g03-12.png
+  ✓ Cell detected at (13, 10) with size 480x318
+Processing: EMDS5-g03-13.png
+  ✓ Cell detected at (327, 53) with size 35x37
+Processing: EMDS5-g03-14.png
+  ✓ Cell detected at (6, 5) with size 493x331
+Processing: EMDS5-g03-15.png
+  ✓ Cell detected at (10, 9) with size 484x320
+Processing: EMDS5-g03-16.png
+  ✓ Cell detected at (174, 172) with size 51x30
+Processing: EMDS5-g03-17.png
+  ✓ Cell detected at (13, 10) with size 481x318
+Processing: EMDS5-g03-18.png
+  ✓ Cell detected at (11, 9) with size 485x320
+Processing: EMDS5-g03-19.png
+  ✓ Cell detected at (10, 9) with size 483x320
+Processing: EMDS5-g03-20.png
+  ✓ Cell detected at (9, 7) with size 485x324
+Processing: EMDS5-g04-01.png
+  ✓ Cell detected at (11, 9) with size 483x320
+Processing: EMDS5-g04-02.png
+  ✓ Cell detected at (11, 9) with size 482x320
+Processing: EMDS5-g04-03.png
+  ✓ Cell detected at (11, 9) with size 483x320
+Processing: EMDS5-g04-04.png
+  ✓ Cell detected at (11, 9) with size 483x320
+Processing: EMDS5-g04-05.png
+  ✓ Cell detected at (11, 9) with size 483x320
+Processing: EMDS5-g04-06.png
+  ✓ Cell detected at (7, 6) with size 492x326
+Processing: EMDS5-g04-07.png
+  ✓ Cell detected at (6, 5) with size 493x328
+Processing: EMDS5-g04-08.png
+  ✓ Cell detected at (255, 215) with size 22x16
+Processing: EMDS5-g04-09.png
+  ✓ Cell detected at (11, 9) with size 483x319
+Processing: EMDS5-g04-10.png
+  ✓ Cell detected at (2, 2) with size 457x331
+Processing: EMDS5-g04-11.png
+  ✓ Cell detected at (11, 9) with size 483x320
+Processing: EMDS5-g04-12.png
+  ✓ Cell detected at (7, 6) with size 488x326
+Processing: EMDS5-g04-13.png
+  ✓ Cell detected at (248, 63) with size 9x11
+Processing: EMDS5-g04-14.png
+  ✓ Cell detected at (12, 0) with size 493x334
+Processing: EMDS5-g04-15.png
+  ✓ Cell detected at (235, 151) with size 24x18
+Processing: EMDS5-g04-16.png
+  ✓ Cell detected at (11, 9) with size 483x320
+Processing: EMDS5-g04-17.png
+  ✓ Cell detected at (12, 0) with size 493x333
+Processing: EMDS5-g04-18.png
+  ✓ Cell detected at (6, 5) with size 493x328
+Processing: EMDS5-g04-19.png
+  ✓ Cell detected at (6, 5) with size 493x328
+Processing: EMDS5-g04-20.png
+  ✓ Cell detected at (203, 113) with size 30x26
+Processing: EMDS5-g05-01.png
+  ✓ Cell detected at (188, 13) with size 30x27
+Processing: EMDS5-g05-02.png
+  ✓ Cell detected at (150, 89) with size 109x85
+Processing: EMDS5-g05-03.png
+  ✓ Cell detected at (13, 10) with size 481x318
+Processing: EMDS5-g05-04.png
+  ✓ Cell detected at (246, 144) with size 44x33
+Processing: EMDS5-g05-05.png
+  ✓ Cell detected at (0, 30) with size 9x12
+Processing: EMDS5-g05-06.png
+  ✓ Cell detected at (93, 44) with size 89x76
+Processing: EMDS5-g05-07.png
+  ✓ Cell detected at (292, 106) with size 46x91
+Processing: EMDS5-g05-08.png
+  ✓ Cell detected at (18, 44) with size 10x12
+Processing: EMDS5-g05-09.png
+  ✓ Cell detected at (335, 157) with size 11x15
+Processing: EMDS5-g05-10.png
+  ✓ Cell detected at (77, 295) with size 67x36
+Processing: EMDS5-g05-11.png
+  ✓ Cell detected at (64, 305) with size 73x33
+Processing: EMDS5-g05-12.png
+  ✓ Cell detected at (124, 76) with size 38x14
+Processing: EMDS5-g05-13.png
+  ✓ Cell detected at (190, 106) with size 28x23
+Processing: EMDS5-g05-14.png
+  ✓ Cell detected at (227, 122) with size 43x32
+Processing: EMDS5-g05-15.png
+  ✓ Cell detected at (197, 221) with size 32x39
+Processing: EMDS5-g05-16.png
+  ✓ Cell detected at (258, 69) with size 46x108
+Processing: EMDS5-g05-17.png
+  ✓ Cell detected at (13, 10) with size 481x318
+Processing: EMDS5-g05-18.png
+  ✓ Cell detected at (139, 48) with size 19x12
+Processing: EMDS5-g05-19.png
+  ✓ Cell detected at (95, 31) with size 108x106
+Processing: EMDS5-g05-20.png
+  ✓ Cell detected at (95, 31) with size 108x106
+Processing: EMDS5-g06-01.png
+  ✓ Cell detected at (5, 5) with size 492x328
+Processing: EMDS5-g06-02.png
+  ✓ Cell detected at (13, 5) with size 489x328
+Processing: EMDS5-g06-03.png
+  ✓ Cell detected at (11, 9) with size 485x319
+Processing: EMDS5-g06-04.png
+  ✓ Cell detected at (227, 83) with size 57x83
+Processing: EMDS5-g06-05.png
+  ✓ Cell detected at (144, 133) with size 49x50
+Processing: EMDS5-g06-06.png
+  ✓ Cell detected at (12, 9) with size 482x320
+Processing: EMDS5-g06-07.png
+  ✓ Cell detected at (195, 129) with size 58x38
+Processing: EMDS5-g06-08.png
+  ✓ Cell detected at (147, 289) with size 42x37
+Processing: EMDS5-g06-09.png
+  ✓ Cell detected at (146, 98) with size 80x46
+Processing: EMDS5-g06-10.png
+  ✓ Cell detected at (11, 9) with size 483x320
+Processing: EMDS5-g06-11.png
+  ✓ Cell detected at (5, 5) with size 493x328
+Processing: EMDS5-g06-12.png
+  ✓ Cell detected at (48, 106) with size 59x28
+Processing: EMDS5-g06-13.png
+  ✓ Cell detected at (11, 9) with size 482x320
+Processing: EMDS5-g06-14.png
+  ✓ Cell detected at (177, 163) with size 24x17
+Processing: EMDS5-g06-15.png
+  ✓ Cell detected at (11, 9) with size 482x320
+Processing: EMDS5-g06-16.png
+  ✓ Cell detected at (11, 9) with size 480x320
+Processing: EMDS5-g06-17.png
+  ✓ Cell detected at (11, 9) with size 484x319
+Processing: EMDS5-g06-18.png
+  ✓ Cell detected at (233, 25) with size 103x102
+Processing: EMDS5-g06-19.png
+  ✓ Cell detected at (5, 5) with size 493x328
+Processing: EMDS5-g06-20.png
+  ✓ Cell detected at (12, 9) with size 482x320
+Processing: EMDS5-g07-01.png
+  ✓ Cell detected at (268, 97) with size 71x74
+Processing: EMDS5-g07-02.png
+  ✓ Cell detected at (226, 168) with size 66x79
+Processing: EMDS5-g07-03.png
+  ✓ Cell detected at (284, 215) with size 10x9
+Processing: EMDS5-g07-04.png
+  ✓ Cell detected at (292, 137) with size 9x15
+Processing: EMDS5-g07-05.png
+  ✓ Cell detected at (377, 225) with size 19x17
+Processing: EMDS5-g07-06.png
+  ✓ Cell detected at (288, 111) with size 171x124
+Processing: EMDS5-g07-07.png
+  ✓ Cell detected at (243, 198) with size 24x17
+Processing: EMDS5-g07-08.png
+  ✓ Cell detected at (11, 9) with size 483x319
+Processing: EMDS5-g07-09.png
+  ✗ No cell detected
+Processing: EMDS5-g07-10.png
+  ✓ Cell detected at (226, 128) with size 19x23
+Processing: EMDS5-g07-11.png
+  ✓ Cell detected at (222, 158) with size 14x16
+Processing: EMDS5-g07-12.png
+  ✓ Cell detected at (164, 138) with size 91x85
+Processing: EMDS5-g07-13.png
+  ✓ Cell detected at (311, 165) with size 46x66
+Processing: EMDS5-g07-14.png
+  ✓ Cell detected at (249, 120) with size 56x46
+Processing: EMDS5-g07-15.png
+  ✓ Cell detected at (222, 222) with size 19x14
+Processing: EMDS5-g07-16.png
+  ✓ Cell detected at (7, 5) with size 493x328
+Processing: EMDS5-g07-17.png
+  ✓ Cell detected at (11, 9) with size 484x320
+Processing: EMDS5-g07-18.png
+  ✓ Cell detected at (126, 243) with size 24x7
+Processing: EMDS5-g07-19.png
+  ✓ Cell detected at (177, 90) with size 154x75
+Processing: EMDS5-g07-20.png
+  ✓ Cell detected at (184, 73) with size 80x138
+Processing: EMDS5-g08-01.png
+  ✓ Cell detected at (180, 165) with size 43x30
+Processing: EMDS5-g08-02.png
+  ✓ Cell detected at (10, 5) with size 495x332
+Processing: EMDS5-g08-03.png
+  ✓ Cell detected at (9, 4) with size 495x333
+Processing: EMDS5-g08-04.png
+  ✓ Cell detected at (10, 4) with size 495x333
+Processing: EMDS5-g08-05.png
+  ✓ Cell detected at (11, 11) with size 484x316
+Processing: EMDS5-g08-06.png
+  ✓ Cell detected at (2, 4) with size 493x332
+Processing: EMDS5-g08-07.png
+  ✓ Cell detected at (11, 9) with size 484x320
+Processing: EMDS5-g08-08.png
+  ✓ Cell detected at (10, 2) with size 494x333
+Processing: EMDS5-g08-09.png
+  ✓ Cell detected at (2, 4) with size 493x334
+Processing: EMDS5-g08-10.png
+  ✓ Cell detected at (142, 99) with size 208x132
+Processing: EMDS5-g08-11.png
+  ✓ Cell detected at (102, 77) with size 61x29
+Processing: EMDS5-g08-12.png
+  ✓ Cell detected at (13, 11) with size 481x316
+Processing: EMDS5-g08-13.png
+  ✓ Cell detected at (11, 9) with size 485x320
+Processing: EMDS5-g08-14.png
+  ✓ Cell detected at (172, 174) with size 257x39
+Processing: EMDS5-g08-15.png
+  ✓ Cell detected at (124, 14) with size 188x234
+Processing: EMDS5-g08-16.png
+  ✓ Cell detected at (201, 175) with size 83x50
+Processing: EMDS5-g08-17.png
+  ✓ Cell detected at (367, 74) with size 76x75
+Processing: EMDS5-g08-18.png
+  ✓ Cell detected at (219, 178) with size 84x152
+Processing: EMDS5-g08-19.png
+  ✓ Cell detected at (11, 11) with size 485x316
+Processing: EMDS5-g08-20.png
+  ✓ Cell detected at (11, 10) with size 485x318
+Processing: EMDS5-g09-01.png
+  ✓ Cell detected at (265, 154) with size 82x85
+Processing: EMDS5-g09-02.png
+  ✓ Cell detected at (264, 100) with size 31x45
+Processing: EMDS5-g09-03.png
+  ✓ Cell detected at (165, 291) with size 11x30
+Processing: EMDS5-g09-04.png
+  ✓ Cell detected at (10, 2) with size 493x331
+Processing: EMDS5-g09-05.png
+  ✓ Cell detected at (91, 104) with size 68x62
+Processing: EMDS5-g09-06.png
+  ✓ Cell detected at (182, 138) with size 82x17
+Processing: EMDS5-g09-07.png
+  ✓ Cell detected at (61, 25) with size 114x154
+Processing: EMDS5-g09-08.png
+  ✓ Cell detected at (70, 56) with size 146x90
+Processing: EMDS5-g09-09.png
+  ✓ Cell detected at (64, 21) with size 166x76
+Processing: EMDS5-g09-10.png
+  ✓ Cell detected at (87, 350) with size 18x19
+Processing: EMDS5-g09-11.png
+  ✓ Cell detected at (129, 76) with size 157x93
+Processing: EMDS5-g09-12.png
+  ✓ Cell detected at (57, 58) with size 53x50
+Processing: EMDS5-g09-13.png
+  ✓ Cell detected at (9, 8) with size 176x138
+Processing: EMDS5-g09-14.png
+  ✓ Cell detected at (53, 89) with size 267x131
+Processing: EMDS5-g09-15.png
+  ✓ Cell detected at (49, 127) with size 107x51
+Processing: EMDS5-g09-16.png
+  ✓ Cell detected at (11, 24) with size 209x98
+Processing: EMDS5-g09-17.png
+  ✓ Cell detected at (32, 70) with size 206x85
+Processing: EMDS5-g09-18.png
+  ✓ Cell detected at (50, 78) with size 163x110
+Processing: EMDS5-g09-19.png
+  ✓ Cell detected at (18, 79) with size 45x52
+Processing: EMDS5-g09-20.png
+  ✓ Cell detected at (21, 99) with size 49x44
+Processing: EMDS5-g10-01.png
+  ✓ Cell detected at (194, 65) with size 91x48
+Processing: EMDS5-g10-02.png
+  ✓ Cell detected at (192, 117) with size 57x41
+Processing: EMDS5-g10-03.png
+  ✓ Cell detected at (11, 8) with size 483x322
+Processing: EMDS5-g10-04.png
+  ✓ Cell detected at (11, 7) with size 492x329
+Processing: EMDS5-g10-05.png
+  ✓ Cell detected at (11, 8) with size 483x322
+Processing: EMDS5-g10-06.png
+  ✓ Cell detected at (12, 2) with size 491x332
+Processing: EMDS5-g10-07.png
+  ✓ Cell detected at (13, 0) with size 492x333
+Processing: EMDS5-g10-08.png
+  ✓ Cell detected at (137, 101) with size 55x60
+Processing: EMDS5-g10-09.png
+  ✓ Cell detected at (199, 206) with size 16x30
+Processing: EMDS5-g10-10.png
+  ✓ Cell detected at (131, 128) with size 120x54
+Processing: EMDS5-g10-11.png
+  ✓ Cell detected at (11, 9) with size 481x320
+Processing: EMDS5-g10-12.png
+  ✓ Cell detected at (180, 128) with size 124x123
+Processing: EMDS5-g10-13.png
+  ✓ Cell detected at (82, 42) with size 295x279
+Processing: EMDS5-g10-14.png
+  ✓ Cell detected at (174, 111) with size 167x224
+Processing: EMDS5-g10-15.png
+  ✓ Cell detected at (3, 182) with size 238x139
+Processing: EMDS5-g10-16.png
+  ✓ Cell detected at (208, 162) with size 60x45
+Processing: EMDS5-g10-17.png
+  ✓ Cell detected at (223, 68) with size 17x25
+Processing: EMDS5-g10-18.png
+  ✓ Cell detected at (315, 298) with size 40x37
+Processing: EMDS5-g10-19.png
+  ✓ Cell detected at (8, 7) with size 486x324
+Processing: EMDS5-g10-20.png
+  ✓ Cell detected at (482, 221) with size 23x31
+Processing: EMDS5-g11-01.png
+  ✓ Cell detected at (76, 84) with size 83x88
+Processing: EMDS5-g11-02.png
+  ✓ Cell detected at (99, 22) with size 172x178
+Processing: EMDS5-g11-03.png
+  ✓ Cell detected at (114, 26) with size 191x211
+Processing: EMDS5-g11-04.png
+  ✓ Cell detected at (43, 30) with size 160x153
+Processing: EMDS5-g11-05.png
+  ✓ Cell detected at (318, 49) with size 28x80
+Processing: EMDS5-g11-06.png
+  ✓ Cell detected at (100, 54) with size 42x37
+Processing: EMDS5-g11-07.png
+  ✓ Cell detected at (22, 9) with size 47x45
+Processing: EMDS5-g11-08.png
+  ✓ Cell detected at (119, 33) with size 180x185
+Processing: EMDS5-g11-09.png
+  ✓ Cell detected at (7, 5) with size 197x199
+Processing: EMDS5-g11-10.png
+  ✓ Cell detected at (55, 25) with size 148x147
+Processing: EMDS5-g11-11.png
+  ✓ Cell detected at (4, 4) with size 193x189
+Processing: EMDS5-g11-12.png
+  ✓ Cell detected at (23, 65) with size 161x225
+Processing: EMDS5-g11-13.png
+  ✓ Cell detected at (62, 19) with size 116x123
+Processing: EMDS5-g11-14.png
+  ✓ Cell detected at (45, 8) with size 165x168
+Processing: EMDS5-g11-15.png
+  ✓ Cell detected at (158, 37) with size 39x23
+Processing: EMDS5-g11-16.png
+  ✓ Cell detected at (53, 52) with size 56x20
+Processing: EMDS5-g11-17.png
+  ✓ Cell detected at (28, 49) with size 129x144
+Processing: EMDS5-g11-18.png
+  ✓ Cell detected at (132, 4) with size 46x47
+Processing: EMDS5-g11-19.png
+  ✓ Cell detected at (70, 51) with size 56x60
+Processing: EMDS5-g11-20.png
+  ✓ Cell detected at (120, 19) with size 165x158
+Processing: EMDS5-g12-01.png
+  ✓ Cell detected at (91, 102) with size 229x236
+Processing: EMDS5-g12-02.png
+  ✓ Cell detected at (22, 3) with size 107x16
+Processing: EMDS5-g12-03.png
+  ✓ Cell detected at (52, 44) with size 211x172
+Processing: EMDS5-g12-04.png
+  ✓ Cell detected at (165, 67) with size 99x65
+Processing: EMDS5-g12-05.png
+  ✓ Cell detected at (150, 64) with size 106x81
+Processing: EMDS5-g12-06.png
+  ✓ Cell detected at (28, 73) with size 195x58
+Processing: EMDS5-g12-07.png
+  ✓ Cell detected at (74, 38) with size 125x183
+Processing: EMDS5-g12-08.png
+  ✓ Cell detected at (103, 15) with size 235x228
+Processing: EMDS5-g12-09.png
+  ✓ Cell detected at (19, 4) with size 172x240
+Processing: EMDS5-g12-10.png
+  ✓ Cell detected at (84, 54) with size 136x243
+Processing: EMDS5-g12-11.png
+  ✓ Cell detected at (0, 15) with size 236x201
+Processing: EMDS5-g12-12.png
+  ✓ Cell detected at (10, 115) with size 208x122
+Processing: EMDS5-g12-13.png
+  ✓ Cell detected at (97, 110) with size 221x139
+Processing: EMDS5-g12-14.png
+  ✓ Cell detected at (127, 75) with size 137x99
+Processing: EMDS5-g12-15.png
+  ✓ Cell detected at (223, 154) with size 112x94
+Processing: EMDS5-g12-16.png
+  ✓ Cell detected at (42, 77) with size 201x119
+Processing: EMDS5-g12-17.png
+  ✓ Cell detected at (27, 16) with size 227x262
+Processing: EMDS5-g12-18.png
+  ✓ Cell detected at (60, 43) with size 100x169
+Processing: EMDS5-g12-19.png
+  ✓ Cell detected at (44, 35) with size 255x158
+Processing: EMDS5-g12-20.png
+  ✓ Cell detected at (111, 11) with size 107x249
+Processing: EMDS5-g13-01.png
+  ✓ Cell detected at (96, 6) with size 302x263
+Processing: EMDS5-g13-02.png
+  ✓ Cell detected at (86, 78) with size 22x47
+Processing: EMDS5-g13-03.png
+  ✓ Cell detected at (23, 78) with size 277x158
+Processing: EMDS5-g13-04.png
+  ✓ Cell detected at (31, 9) with size 282x199
+Processing: EMDS5-g13-05.png
+  ✓ Cell detected at (45, 52) with size 138x88
+Processing: EMDS5-g13-06.png
+  ✓ Cell detected at (210, 85) with size 107x155
+Processing: EMDS5-g13-07.png
+  ✓ Cell detected at (169, 169) with size 97x113
+Processing: EMDS5-g13-08.png
+  ✓ Cell detected at (124, 188) with size 24x24
+Processing: EMDS5-g13-09.png
+  ✓ Cell detected at (34, 67) with size 140x189
+Processing: EMDS5-g13-10.png
+  ✓ Cell detected at (40, 219) with size 26x40
+Processing: EMDS5-g13-11.png
+  ✓ Cell detected at (5, 4) with size 288x192
+Processing: EMDS5-g13-12.png
+  ✓ Cell detected at (0, 25) with size 286x185
+Processing: EMDS5-g13-13.png
+  ✓ Cell detected at (98, 38) with size 84x124
+Processing: EMDS5-g13-14.png
+  ✓ Cell detected at (49, 4) with size 343x247
+Processing: EMDS5-g13-15.png
+  ✓ Cell detected at (42, 239) with size 37x10
+Processing: EMDS5-g13-16.png
+  ✓ Cell detected at (126, 80) with size 116x123
+Processing: EMDS5-g13-17.png
+  ✓ Cell detected at (245, 65) with size 84x99
+Processing: EMDS5-g13-18.png
+  ✓ Cell detected at (25, 49) with size 305x251
+Processing: EMDS5-g13-19.png
+  ✓ Cell detected at (0, 100) with size 282x89
+Processing: EMDS5-g13-20.png
+  ✓ Cell detected at (22, 49) with size 112x54
+Processing: EMDS5-g14-01.png
+  ✓ Cell detected at (197, 23) with size 69x74
+Processing: EMDS5-g14-02.png
+  ✓ Cell detected at (22, 39) with size 256x143
+Processing: EMDS5-g14-03.png
+  ✓ Cell detected at (85, 19) with size 236x195
+Processing: EMDS5-g14-04.png
+  ✓ Cell detected at (117, 17) with size 153x266
+Processing: EMDS5-g14-05.png
+  ✓ Cell detected at (321, 35) with size 23x29
+Processing: EMDS5-g14-06.png
+  ✓ Cell detected at (188, 55) with size 142x99
+Processing: EMDS5-g14-07.png
+  ✓ Cell detected at (55, 38) with size 145x137
+Processing: EMDS5-g14-08.png
+  ✓ Cell detected at (69, 15) with size 18x19
+Processing: EMDS5-g14-09.png
+  ✓ Cell detected at (205, 6) with size 33x20
+Processing: EMDS5-g14-10.png
+  ✓ Cell detected at (18, 23) with size 287x174
+Processing: EMDS5-g14-11.png
+  ✓ Cell detected at (47, 64) with size 252x73
+Processing: EMDS5-g14-12.png
+  ✓ Cell detected at (49, 68) with size 250x113
+Processing: EMDS5-g14-13.png
+  ✓ Cell detected at (132, 213) with size 29x22
+Processing: EMDS5-g14-14.png
+  ✓ Cell detected at (85, 79) with size 52x40
+Processing: EMDS5-g14-15.png
+  ✓ Cell detected at (89, 55) with size 115x116
+Processing: EMDS5-g14-16.png
+  ✓ Cell detected at (3, 16) with size 279x139
+Processing: EMDS5-g14-17.png
+  ✓ Cell detected at (20, 21) with size 324x229
+Processing: EMDS5-g14-18.png
+  ✓ Cell detected at (69, 56) with size 227x170
+Processing: EMDS5-g14-19.png
+  ✓ Cell detected at (11, 88) with size 133x176
+Processing: EMDS5-g14-20.png
+  ✓ Cell detected at (33, 67) with size 272x61
+Processing: EMDS5-g15-01.png
+  ✓ Cell detected at (18, 39) with size 217x157
+Processing: EMDS5-g15-02.png
+  ✓ Cell detected at (131, 14) with size 82x282
+Processing: EMDS5-g15-03.png
+  ✓ Cell detected at (12, 13) with size 147x145
+Processing: EMDS5-g15-04.png
+  ✓ Cell detected at (292, 147) with size 29x29
+Processing: EMDS5-g15-05.png
+  ✓ Cell detected at (162, 56) with size 136x215
+Processing: EMDS5-g15-06.png
+  ✓ Cell detected at (145, 66) with size 109x107
+Processing: EMDS5-g15-07.png
+  ✓ Cell detected at (47, 38) with size 206x204
+Processing: EMDS5-g15-08.png
+  ✓ Cell detected at (189, 94) with size 49x75
+Processing: EMDS5-g15-09.png
+  ✓ Cell detected at (89, 124) with size 13x21
+Processing: EMDS5-g15-10.png
+  ✓ Cell detected at (72, 35) with size 165x101
+Processing: EMDS5-g15-11.png
+  ✓ Cell detected at (75, 71) with size 174x89
+Processing: EMDS5-g15-12.png
+  ✓ Cell detected at (108, 120) with size 129x47
+Processing: EMDS5-g15-13.png
+  ✓ Cell detected at (45, 41) with size 217x155
+Processing: EMDS5-g15-14.png
+  ✓ Cell detected at (118, 0) with size 107x232
+Processing: EMDS5-g15-15.png
+  ✓ Cell detected at (316, 177) with size 22x23
+Processing: EMDS5-g15-16.png
+  ✓ Cell detected at (219, 206) with size 63x29
+Processing: EMDS5-g15-17.png
+  ✓ Cell detected at (149, 92) with size 89x168
+Processing: EMDS5-g15-18.png
+  ✓ Cell detected at (81, 24) with size 58x25
+Processing: EMDS5-g15-19.png
+  ✓ Cell detected at (102, 4) with size 109x209
+Processing: EMDS5-g15-20.png
+  ✓ Cell detected at (24, 97) with size 155x67
+Processing: EMDS5-g16-01.png
+  ✓ Cell detected at (8, 11) with size 474x344
+Processing: EMDS5-g16-02.png
+  ✓ Cell detected at (102, 124) with size 210x89
+Processing: EMDS5-g16-03.png
+  ✓ Cell detected at (117, 61) with size 365x132
+Processing: EMDS5-g16-04.png
+  ✓ Cell detected at (388, 141) with size 201x150
+Processing: EMDS5-g16-05.png
+  ✓ Cell detected at (307, 36) with size 182x265
+Processing: EMDS5-g16-06.png
+  ✓ Cell detected at (274, 106) with size 26x9
+Processing: EMDS5-g16-07.png
+  ✓ Cell detected at (369, 250) with size 132x68
+Processing: EMDS5-g16-08.png
+  ✓ Cell detected at (323, 116) with size 28x191
+Processing: EMDS5-g16-09.png
+  ✓ Cell detected at (141, 117) with size 386x136
+Processing: EMDS5-g16-10.png
+  ✓ Cell detected at (354, 223) with size 35x74
+Processing: EMDS5-g16-11.png
+  ✓ Cell detected at (293, 87) with size 58x170
+Processing: EMDS5-g16-12.png
+  ✓ Cell detected at (247, 33) with size 190x218
+Processing: EMDS5-g16-13.png
+  ✓ Cell detected at (68, 4) with size 105x123
+Processing: EMDS5-g16-14.png
+  ✓ Cell detected at (203, 101) with size 53x59
+Processing: EMDS5-g16-15.png
+  ✓ Cell detected at (431, 236) with size 140x220
+Processing: EMDS5-g16-16.png
+  ✓ Cell detected at (11, 268) with size 59x4
+Processing: EMDS5-g16-17.png
+  ✓ Cell detected at (454, 208) with size 31x26
+Processing: EMDS5-g16-18.png
+  ✓ Cell detected at (22, 8) with size 739x497
+Processing: EMDS5-g16-19.png
+  ✓ Cell detected at (245, 185) with size 52x42
+Processing: EMDS5-g16-20.png
+  ✓ Cell detected at (214, 72) with size 198x198
+Processing: EMDS5-g17-01.png
+  ✓ Cell detected at (369, 302) with size 88x5
+Processing: EMDS5-g17-02.png
+  ✓ Cell detected at (369, 302) with size 88x5
+Processing: EMDS5-g17-03.png
+  ✓ Cell detected at (219, 208) with size 179x56
+Processing: EMDS5-g17-04.png
+  ✓ Cell detected at (369, 302) with size 88x5
+Processing: EMDS5-g17-05.png
+  ✓ Cell detected at (168, 0) with size 180x241
+Processing: EMDS5-g17-06.png
+  ✓ Cell detected at (369, 302) with size 88x5
+Processing: EMDS5-g17-07.png
+  ✓ Cell detected at (369, 302) with size 88x5
+Processing: EMDS5-g17-08.png
+  ✓ Cell detected at (369, 302) with size 88x5
+Processing: EMDS5-g17-09.png
+  ✓ Cell detected at (369, 302) with size 88x5
+Processing: EMDS5-g17-10.png
+  ✓ Cell detected at (398, 302) with size 59x5
+Processing: EMDS5-g17-11.png
+  ✓ Cell detected at (369, 302) with size 88x5
+Processing: EMDS5-g17-12.png
+  ✓ Cell detected at (369, 302) with size 88x5
+Processing: EMDS5-g17-13.png
+  ✓ Cell detected at (369, 302) with size 88x5
+Processing: EMDS5-g17-14.png
+  ✓ Cell detected at (369, 302) with size 88x5
+Processing: EMDS5-g17-15.png
+  ✓ Cell detected at (167, 136) with size 116x60
+Processing: EMDS5-g17-16.png
+  ✓ Cell detected at (182, 119) with size 180x142
+Processing: EMDS5-g17-17.png
+  ✓ Cell detected at (369, 302) with size 88x5
+Processing: EMDS5-g17-18.png
+  ✓ Cell detected at (369, 302) with size 88x5
+Processing: EMDS5-g17-19.png
+  ✓ Cell detected at (369, 302) with size 88x5
+Processing: EMDS5-g17-20.png
+  ✓ Cell detected at (369, 302) with size 88x5
+Processing: EMDS5-g18-01.png
+  ✓ Cell detected at (69, 85) with size 70x128
+Processing: EMDS5-g18-02.png
+  ✓ Cell detected at (164, 138) with size 294x337
+Processing: EMDS5-g18-03.png
+  ✓ Cell detected at (154, 117) with size 280x400
+Processing: EMDS5-g18-04.png
+  ✓ Cell detected at (145, 6) with size 44x36
+Processing: EMDS5-g18-05.png
+  ✓ Cell detected at (104, 17) with size 68x115
+Processing: EMDS5-g18-06.png
+  ✓ Cell detected at (108, 155) with size 50x41
+Processing: EMDS5-g18-07.png
+  ✓ Cell detected at (54, 12) with size 123x97
+Processing: EMDS5-g18-08.png
+  ✓ Cell detected at (91, 94) with size 88x47
+Processing: EMDS5-g18-09.png
+  ✓ Cell detected at (184, 285) with size 49x35
+Processing: EMDS5-g18-10.png
+  ✓ Cell detected at (92, 83) with size 92x63
+Processing: EMDS5-g18-11.png
+  ✓ Cell detected at (365, 137) with size 16x221
+Processing: EMDS5-g18-12.png
+  ✓ Cell detected at (246, 259) with size 101x5
+Processing: EMDS5-g18-13.png
+  ✓ Cell detected at (57, 62) with size 23x278
+Processing: EMDS5-g18-14.png
+  ✓ Cell detected at (135, 374) with size 107x9
+Processing: EMDS5-g18-15.png
+  ✓ Cell detected at (24, 4) with size 146x159
+Processing: EMDS5-g18-16.png
+  ✓ Cell detected at (118, 99) with size 113x82
+Processing: EMDS5-g18-17.png
+  ✓ Cell detected at (135, 22) with size 46x23
+Processing: EMDS5-g18-18.png
+  ✓ Cell detected at (54, 227) with size 14x19
+Processing: EMDS5-g18-19.png
+  ✓ Cell detected at (19, 387) with size 16x40
+Processing: EMDS5-g18-20.png
+  ✓ Cell detected at (771, 1133) with size 418x14
+Processing: EMDS5-g19-01.png
+  ✓ Cell detected at (271, 151) with size 59x44
+Processing: EMDS5-g19-02.png
+  ✓ Cell detected at (5, 7) with size 746x502
+Processing: EMDS5-g19-03.png
+  ✓ Cell detected at (19, 15) with size 730x481
+Processing: EMDS5-g19-04.png
+  ✓ Cell detected at (351, 218) with size 60x74
+Processing: EMDS5-g19-05.png
+  ✓ Cell detected at (48, 152) with size 310x205
+Processing: EMDS5-g19-06.png
+  ✓ Cell detected at (20, 15) with size 727x483
+Processing: EMDS5-g19-07.png
+  ✓ Cell detected at (240, 50) with size 114x114
+Processing: EMDS5-g19-08.png
+  ✓ Cell detected at (21, 8) with size 740x497
+Processing: EMDS5-g19-09.png
+  ✓ Cell detected at (435, 249) with size 94x50
+Processing: EMDS5-g19-10.png
+  ✓ Cell detected at (268, 303) with size 160x169
+Processing: EMDS5-g19-11.png
+  ✓ Cell detected at (361, 302) with size 56x49
+Processing: EMDS5-g19-12.png
+  ✓ Cell detected at (407, 103) with size 66x101
+Processing: EMDS5-g19-13.png
+  ✓ Cell detected at (58, 168) with size 106x16
+Processing: EMDS5-g19-14.png
+  ✓ Cell detected at (20, 15) with size 727x483
+Processing: EMDS5-g19-15.png
+  ✓ Cell detected at (304, 265) with size 18x17
+Processing: EMDS5-g19-16.png
+  ✓ Cell detected at (335, 169) with size 72x41
+Processing: EMDS5-g19-17.png
+  ✓ Cell detected at (21, 9) with size 747x501
+Processing: EMDS5-g19-18.png
+  ✓ Cell detected at (284, 170) with size 59x136
+Processing: EMDS5-g19-19.png
+  ✓ Cell detected at (21, 9) with size 747x502
+Processing: EMDS5-g19-20.png
+  ✓ Cell detected at (126, 134) with size 67x72
+Processing: EMDS5-g20-01.png
+  ✓ Cell detected at (357, 347) with size 48x31
+Processing: EMDS5-g20-02.png
+  ✓ Cell detected at (223, 324) with size 23x20
+Processing: EMDS5-g20-03.png
+  ✓ Cell detected at (258, 335) with size 35x58
+Processing: EMDS5-g20-04.png
+  ✓ Cell detected at (482, 323) with size 19x15
+Processing: EMDS5-g20-05.png
+  ✓ Cell detected at (104, 403) with size 27x25
+Processing: EMDS5-g20-06.png
+  ✓ Cell detected at (206, 167) with size 57x21
+Processing: EMDS5-g20-07.png
+  ✓ Cell detected at (448, 273) with size 19x15
+Processing: EMDS5-g20-08.png
+  ✓ Cell detected at (7, 357) with size 4x84
+Processing: EMDS5-g20-09.png
+  ✓ Cell detected at (154, 251) with size 114x79
+Processing: EMDS5-g20-10.png
+  ✓ Cell detected at (341, 188) with size 52x35
+Processing: EMDS5-g20-11.png
+  ✓ Cell detected at (14, 12) with size 739x489
+Processing: EMDS5-g20-12.png
+  ✓ Cell detected at (13, 12) with size 735x489
+Processing: EMDS5-g20-13.png
+  ✓ Cell detected at (14, 4) with size 747x502
+Processing: EMDS5-g20-14.png
+  ✓ Cell detected at (457, 162) with size 53x73
+Processing: EMDS5-g20-15.png
+  ✓ Cell detected at (14, 4) with size 747x502
+Processing: EMDS5-g20-16.png
+  ✓ Cell detected at (381, 246) with size 46x46
+Processing: EMDS5-g20-17.png
+  ✓ Cell detected at (279, 259) with size 14x15
+Processing: EMDS5-g20-18.png
+  ✓ Cell detected at (466, 365) with size 35x18
+Processing: EMDS5-g20-19.png
+  ✓ Cell detected at (306, 334) with size 40x35
+Processing: EMDS5-g20-20.png
+  ✓ Cell detected at (16, 13) with size 747x499
+Processing: EMDS5-g21-01.png
+  ✓ Cell detected at (113, 58) with size 142x133
+Processing: EMDS5-g21-02.png
+  ✓ Cell detected at (229, 121) with size 53x36
+Processing: EMDS5-g21-03.png
+  ✓ Cell detected at (107, 97) with size 137x68
+Processing: EMDS5-g21-04.png
+  ✓ Cell detected at (94, 47) with size 91x77
+Processing: EMDS5-g21-05.png
+  ✓ Cell detected at (76, 98) with size 77x65
+Processing: EMDS5-g21-06.png
+  ✓ Cell detected at (253, 226) with size 107x28
+Processing: EMDS5-g21-07.png
+  ✓ Cell detected at (338, 107) with size 121x95
+Processing: EMDS5-g21-08.png
+  ✓ Cell detected at (351, 243) with size 246x476
+Processing: EMDS5-g21-09.png
+  ✓ Cell detected at (93, 45) with size 110x161
+Processing: EMDS5-g21-10.png
+  ✓ Cell detected at (44, 83) with size 323x328
+Processing: EMDS5-g21-11.png
+  ✓ Cell detected at (114, 311) with size 285x117
+Processing: EMDS5-g21-12.png
+  ✓ Cell detected at (190, 43) with size 63x82
+Processing: EMDS5-g21-13.png
+  ✓ Cell detected at (510, 121) with size 33x38
+Processing: EMDS5-g21-14.png
+  ✓ Cell detected at (115, 122) with size 103x166
+Processing: EMDS5-g21-15.png
+  ✓ Cell detected at (464, 214) with size 50x74
+Processing: EMDS5-g21-16.png
+  ✓ Cell detected at (62, 64) with size 124x79
+Processing: EMDS5-g21-17.png
+  ✓ Cell detected at (195, 65) with size 65x115
+Processing: EMDS5-g21-18.png
+  ✓ Cell detected at (149, 67) with size 28x31
+Processing: EMDS5-g21-19.png
+  ✓ Cell detected at (93, 38) with size 84x52
+Processing: EMDS5-g21-20.png
+  ✓ Cell detected at (62, 71) with size 122x45
+
+==================================================
+Test Summary:
+  Successful: 419/420
+  Failed: 1/420
+  Success Rate: 99.8%
