@@ -1,0 +1,23 @@
+# YOLO11 Dataset Configuration
+# This file tells YOLO where to find your training data
+
+# Path to dataset root directory
+path: ./dataset
+
+# Paths to train/val/test image directories (relative to 'path')
+train: images/train
+val: images/val
+test: images/test  # Optional
+
+# Number of classes
+nc: 1
+
+# Class names (update based on your actual classes)
+names:
+  0: cell
+
+# Optional: Additional settings
+# Download script (if dataset needs to be downloaded)
+# download: |
+#   import os
+#   # Add download logic here if needed

@@ -1,3 +1,8 @@
-PyQt6>=6.0.0
-pyqtgraph>=0.13.0
-numpy>=1.20.0
+# Core Dependencies for Cell Detection & Tracking
+ultralytics>=8.3.50         # YOLO11 object detection
+opencv-python>=4.10.0       # Computer vision and video processing
+numpy>=1.26.4               # Numerical computing
+
+# Optional (for GUI/analytics features)
+# PyQt6>=6.0.0              # GUI framework (if you want to add UI later)
+# pyqtgraph>=0.13.0         # Plotting library (for analytics)
