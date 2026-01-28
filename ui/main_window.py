@@ -32,7 +32,7 @@ class BioOracleWindow(QMainWindow):
     
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("PENCERE BAŞLIĞI: Bio-Oracle v1.0")
+        self.setWindowTitle("Bio-Oracle v1.0")
         self.setMinimumSize(1200, 800)
         
         # State variables
@@ -116,43 +116,43 @@ class BioOracleWindow(QMainWindow):
         # Status bar
         self.status_bar = QStatusBar()
         self.setStatusBar(self.status_bar)
-        self.status_bar.showMessage("Ready | Hazır")
+        self.status_bar.showMessage("Ready")
     
     def setup_menu_bar(self):
         """Setup the menu bar"""
         menubar = self.menuBar()
         
         # File menu
-        file_menu = menubar.addMenu('&Dosya')
+        file_menu = menubar.addMenu('&File')
         
-        open_action = QAction('&Video Aç', self)
+        open_action = QAction('&Open Video', self)
         open_action.setShortcut('Ctrl+O')
         open_action.triggered.connect(self.open_video)
         file_menu.addAction(open_action)
         
         file_menu.addSeparator()
         
-        exit_action = QAction('&Çıkış', self)
+        exit_action = QAction('&Exit', self)
         exit_action.setShortcut('Ctrl+Q')
         exit_action.triggered.connect(self.close)
         file_menu.addAction(exit_action)
         
         # Control menu
-        control_menu = menubar.addMenu('&Kontrol')
+        control_menu = menubar.addMenu('&Control')
         
-        play_action = QAction('&Başlat', self)
+        play_action = QAction('&Play/Pause', self)
         play_action.setShortcut('Space')
         play_action.triggered.connect(self.toggle_playback)
         control_menu.addAction(play_action)
         
-        stop_action = QAction('&Durdur', self)
+        stop_action = QAction('&Stop', self)
         stop_action.triggered.connect(self.stop_video)
         control_menu.addAction(stop_action)
         
         # Help menu
-        help_menu = menubar.addMenu('&Yardım')
+        help_menu = menubar.addMenu('&Help')
         
-        about_action = QAction('&Hakkında', self)
+        about_action = QAction('&About', self)
         about_action.triggered.connect(self.show_about)
         help_menu.addAction(about_action)
     
@@ -166,7 +166,7 @@ class BioOracleWindow(QMainWindow):
         """Open a video file"""
         file_path, _ = QFileDialog.getOpenFileName(
             self,
-            "Video Seç",
+            "Select Video",
             "",
             "Video Files (*.mp4 *.avi *.mov *.mkv);;All Files (*.*)"
         )
@@ -188,7 +188,7 @@ class BioOracleWindow(QMainWindow):
         self.video_capture = cv2.VideoCapture(video_path)
         
         if not self.video_capture.isOpened():
-            QMessageBox.critical(self, "Hata", f"Video açılamadı: {video_path}")
+            QMessageBox.critical(self, "Error", f"Could not open video: {video_path}")
             return
         
         self.current_video_path = video_path
@@ -212,14 +212,14 @@ class BioOracleWindow(QMainWindow):
                     date_format=config.LOG_DATE_FORMAT,
                     time_format=config.LOG_TIME_FORMAT
                 )
-                self.status_bar.showMessage(f"Video yüklendi: {os.path.basename(video_path)} | Detection: Active")
+                self.status_bar.showMessage(f"Loaded: {os.path.basename(video_path)} | Detection: Active")
             except Exception as e:
                 print(f"Error initializing detection: {e}")
                 self.detector = None
                 self.tracker = None
-                self.status_bar.showMessage(f"Video yüklendi: {os.path.basename(video_path)} | Detection: Inactive")
+                self.status_bar.showMessage(f"Loaded: {os.path.basename(video_path)} | Detection: Inactive")
         else:
-            self.status_bar.showMessage(f"Video yüklendi: {os.path.basename(video_path)} | Demo Mode")
+            self.status_bar.showMessage(f"Loaded: {os.path.basename(video_path)} | Demo Mode")
         
         # Clear analytics
         self.analytics_widget.clear_data()
@@ -256,7 +256,7 @@ class BioOracleWindow(QMainWindow):
         
         self.video_widget.clear_frame()
         self.frame_count = 0
-        self.status_bar.showMessage("Durduruldu | Stopped")
+        self.status_bar.showMessage("Stopped")
     
     def update_frame(self):
         """Update video frame and perform detection"""
@@ -359,8 +359,8 @@ class BioOracleWindow(QMainWindow):
         """Handle kill button click"""
         reply = QMessageBox.question(
             self,
-            'Onay',
-            'Tüm hücreleri öldürmek istediğinizden emin misiniz?',
+            'Confirm',
+            'Are you sure you want to kill all cells?',
             QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
             QMessageBox.StandardButton.No
         )
@@ -368,20 +368,20 @@ class BioOracleWindow(QMainWindow):
         if reply == QMessageBox.StandardButton.Yes:
             # TODO: Implement kill logic
             self.status_bar.showMessage("⚠️ Kill function activated!")
-            QMessageBox.information(self, "Bilgi", "Öldürme fonksiyonu aktif! (Simülasyon)")
+            QMessageBox.information(self, "Info", "Kill function activated! (Simulation)")
     
     def show_about(self):
         """Show about dialog"""
         QMessageBox.about(
             self,
-            "Bio-Oracle Hakkında",
+            "About Bio-Oracle",
             "<h2>Bio-Oracle v1.0</h2>"
-            "<p>Gerçek zamanlı hücre tespit ve takip sistemi</p>"
-            "<p><b>Modüller:</b></p>"
+            "<p>Real-time cell detection and tracking system</p>"
+            "<p><b>Modules:</b></p>"
             "<ul>"
-            "<li>Biyolog: Hücre tespiti ve görselleştirme</li>"
-            "<li>Kimyager: Çevresel kontroller</li>"
-            "<li>Analist: Veri analizi ve grafikler</li>"
+            "<li>Detector: Cell detection and visualization</li>"
+            "<li>Tracker: Movement tracking</li>"
+            "<li>Logger: Data analysis and logging</li>"
             "</ul>"
             "<p>© 2026 Bio-Oracle Project</p>"
         )

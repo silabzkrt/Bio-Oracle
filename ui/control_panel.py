@@ -25,7 +25,7 @@ class ControlPanel(QWidget):
         layout = QVBoxLayout()
         
         # Title
-        title = QLabel("[ KONTROL PANELİ ]")
+        title = QLabel("[ CONTROL PANEL ]")
         title.setAlignment(Qt.AlignmentFlag.AlignCenter)
         title.setStyleSheet("""
             QLabel {
@@ -54,7 +54,7 @@ class ControlPanel(QWidget):
         control_layout.setSpacing(20)
         
         # Toxicity slider (Zehir Miktarı)
-        toxicity_label = QLabel("• Zehir Miktarı")
+        toxicity_label = QLabel("• Poison")
         toxicity_label.setStyleSheet("""
             QLabel {
                 color: #00FF00;
@@ -98,8 +98,50 @@ class ControlPanel(QWidget):
         control_layout.addWidget(self.toxicity_slider)
         control_layout.addWidget(self.toxicity_value_label)
         
-        # Temperature slider (Sıcaklık Slider'ı)
-        temp_label = QLabel("• Sıcaklık Slider'ı")
+        # Temperature slider
+        temp_label = QLabel("• Temperature")
+        temp_label.setStyleSheet("""
+            QLabel {
+                color: #00FF00;
+                font-size: 14px;
+                font-family: 'Courier New', monospace;
+            }
+        """)
+        
+        self.temperature_slider = QSlider(Qt.Orientation.Horizontal)
+        self.temperature_slider.setMinimum(-20)
+        self.temperature_slider.setMaximum(50)
+        self.temperature_slider.setValue(25)
+        self.temperature_slider.setStyleSheet("""
+            QSlider::groove:horizontal {
+                border: 1px solid #00FF00;
+                height: 8px;
+                background: #000000;
+                margin: 2px 0;
+            }
+            QSlider::handle:horizontal {
+                background: #00FF00;
+                border: 1px solid #00FF00;
+                width: 18px;
+                margin: -5px 0;
+                border-radius: 9px;
+            }
+        """)
+        self.temperature_slider.valueChanged.connect(self.on_temperature_changed)
+        
+        self.temperature_value_label = QLabel("25°C")
+        self.temperature_value_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.temperature_value_label.setStyleSheet("""
+            QLabel {
+                color: #00FF00;
+                font-size: 12px;
+                font-family: 'Courier New', monospace;
+            }
+        """)
+        
+        control_layout.addWidget(temp_label)
+        control_layout.addWidget(self.temperature_slider)
+        control_layout.addWidget(self.temperature_value_label)
         temp_label.setStyleSheet("""
             QLabel {
                 color: #00FF00;
@@ -143,17 +185,8 @@ class ControlPanel(QWidget):
         control_layout.addWidget(self.temperature_slider)
         control_layout.addWidget(self.temperature_value_label)
         
-        # Kill button (Öldür Butonu)
-        kill_label = QLabel("• Öldür Butonu")
-        kill_label.setStyleSheet("""
-            QLabel {
-                color: #00FF00;
-                font-size: 14px;
-                font-family: 'Courier New', monospace;
-            }
-        """)
-        
-        self.kill_button = QPushButton("ÖLDÜR")
+        # Kill button
+        self.kill_button = QPushButton("KILL")
         self.kill_button.setStyleSheet("""
             QPushButton {
                 background-color: #FF0000;
@@ -174,21 +207,7 @@ class ControlPanel(QWidget):
         """)
         self.kill_button.clicked.connect(self.on_kill_clicked)
         
-        control_layout.addWidget(kill_label)
         control_layout.addWidget(self.kill_button)
-        
-        # Info label
-        info_label = QLabel("(Kimyager Yeri)")
-        info_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        info_label.setStyleSheet("""
-            QLabel {
-                color: #00FF00;
-                font-size: 12px;
-                font-family: 'Courier New', monospace;
-                padding: 10px;
-            }
-        """)
-        control_layout.addWidget(info_label)
         
         control_layout.addStretch()
         control_group.setLayout(control_layout)

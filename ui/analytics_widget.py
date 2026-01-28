@@ -29,7 +29,7 @@ class AnalyticsWidget(QWidget):
         layout.setContentsMargins(0, 0, 0, 0)
         
         # Title
-        title = QLabel("[ SENİN GRAFİĞİN (THE ANALYST) ]")
+        title = QLabel("[ ANALYTICS ]")
         title.setAlignment(Qt.AlignmentFlag.AlignCenter)
         title.setStyleSheet("""
             QLabel {

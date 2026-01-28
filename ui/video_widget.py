@@ -26,7 +26,7 @@ class VideoWidget(QWidget):
         layout.setContentsMargins(0, 0, 0, 0)
         
         # Title label
-        self.title_label = QLabel("[ VİDEO EKRANI ]")
+        self.title_label = QLabel("[ VIDEO FEED ]")
         self.title_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.title_label.setStyleSheet("""
             QLabel {
@@ -46,13 +46,6 @@ class VideoWidget(QWidget):
         self.video_label.setMinimumSize(640, 480)
         self.video_label.setStyleSheet("""
             QLabel {
-                background-color: #000000;
-                border: 2px solid #00FF00;
-            }
-        """)
-        self.video_label.setText("(Hücrelerin hareket ettiği\ngerçek mikroskop görüntüsü)\n\n(Biyolog Yeri)")
-        self.video_label.setStyleSheet("""
-            QLabel {
                 color: #00FF00;
                 font-size: 14px;
                 font-family: 'Courier New', monospace;
@@ -61,22 +54,8 @@ class VideoWidget(QWidget):
             }
         """)
         
-        # Info label
-        self.info_label = QLabel("(Biyolog Yeri)")
-        self.info_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self.info_label.setStyleSheet("""
-            QLabel {
-                color: #00FF00;
-                font-size: 12px;
-                font-family: 'Courier New', monospace;
-                background-color: #1a1a1a;
-                padding: 5px;
-            }
-        """)
-        
         layout.addWidget(self.title_label)
         layout.addWidget(self.video_label, 1)
-        layout.addWidget(self.info_label)
         
         self.setLayout(layout)
     
@@ -115,4 +94,3 @@ class VideoWidget(QWidget):
     def clear_frame(self):
         """Clear the video display"""
         self.video_label.clear()
-        self.video_label.setText("(Hücrelerin hareket ettiği\ngerçek mikroskop görüntüsü)\n\n(Biyolog Yeri)")
