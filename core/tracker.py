@@ -1,11 +1,12 @@
 """
 CentroidTracker - Implements centroid-based tracking algorithm for biological entities
+Matches new detections to existing entities using Euclidean distance
 """
 import numpy as np
 from scipy.spatial import distance as dist
 from typing import List, Tuple, Dict, Optional
 import logging
-from modules.bio_entity import BioEntity
+from .entities import BioEntity
 
 
 class CentroidTracker:
@@ -116,8 +117,7 @@ class CentroidTracker:
             # Calculate pairwise distances between entities and detections
             distances = dist.cdist(entity_centroids, detection_centroids)
             
-            # Find optimal assignments using Hungarian algorithm (greedy approximation)
-            # For real-time performance, we use a simple greedy approach
+            # Find optimal assignments using greedy approach
             rows = distances.min(axis=1).argsort()
             cols = distances.argmin(axis=1)[rows]
             

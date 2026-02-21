@@ -1,0 +1,57 @@
+# Bio-Oracle Framework Configuration
+# Adjust these parameters to optimize cell detection and tracking
+
+# ===== VISION SETTINGS =====
+vision:
+  # Detection method: 'traditional' (better for microscopy) or 'yolo' (ML-based)
+  detection_method: traditional
+  
+  # YOLO model path (only used if detection_method is 'yolo')
+  model_path: models/yolov11n.pt
+  
+  # Confidence threshold for detections (0.0-1.0)
+  confidence_threshold: 0.5
+  
+  # Device for YOLO: 'cpu', 'cuda', or 'mps' (Mac)
+  device: cpu
+  
+  # Traditional CV parameters (for microscopy cells)
+  min_area: 400        # Minimum cell area in pixels
+  max_area: 25000      # Maximum cell area in pixels
+  blur_kernel: 5       # Gaussian blur kernel size (must be odd)
+
+# ===== TRACKING SETTINGS =====
+tracking:
+  # Maximum frames a cell can be missing before being removed
+  max_disappeared: 30
+  
+  # Maximum distance (pixels) to match detection to existing cell
+  max_distance: 75.0
+
+# ===== SIMULATION SETTINGS =====
+simulation:
+  # Lotka-Volterra parameters
+  growth_rate: 0.1              # Intrinsic growth rate (r)
+  carrying_capacity: 200.0      # Maximum sustainable population (K)
+  
+  # How many seconds ahead to predict
+  prediction_seconds: 10.0
+
+# ===== VISUALIZATION SETTINGS =====
+visualization:
+  # Show cell movement trails
+  show_trails: true
+  
+  # Show ghost predictions (future positions)
+  show_ghosts: true
+  
+  # How many frames ahead to show ghost predictions
+  ghost_frames_ahead: 10
+
+# ===== DATA LOGGING SETTINGS =====
+logging:
+  # Enable/disable data logging to CSV and JSON
+  enabled: true
+  
+  # Output directory for log files
+  output_dir: data/outputs
