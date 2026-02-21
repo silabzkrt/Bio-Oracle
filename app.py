@@ -5,7 +5,7 @@ Run this file to start the GUI application
 
 import sys
 from PyQt6.QtWidgets import QApplication
-from ui.main_window import BioOracleWindow
+from src.ui.main_window import BioOracleWindow
 
 
 def main():

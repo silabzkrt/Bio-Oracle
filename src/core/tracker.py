@@ -5,7 +5,7 @@ import numpy as np
 from scipy.spatial import distance as dist
 from typing import List, Tuple, Dict, Optional
 import logging
-from modules.bio_entity import BioEntity
+from src.core.bio_entity import BioEntity
 
 
 class CentroidTracker:
