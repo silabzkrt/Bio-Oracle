@@ -11,7 +11,7 @@ import logging
 import csv
 from pathlib import Path
 from datetime import datetime
-from modules.traditional_detector import TraditionalCellDetector
+from src.core.traditional_detector import TraditionalCellDetector
 
 
 # Configure logging

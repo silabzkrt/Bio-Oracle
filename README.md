@@ -36,40 +36,70 @@ Built with **Python**, the system uses **YOLO11** for cell detection, custom tra
 ```
 Bio-Oracle/
 │
-├── main.py                  # Entry point - Run this to start the app
-├── config.py                # All settings (Thresholds, Paths, Colors)
-├── requirements.txt         # Dependencies (ultralytics, opencv-python, etc.)
-├── README.md                # This file
+├── app.py                   # Application entry point - Run this to start
+├── config.py                # Main configuration settings
+├── requirements.txt         # Python dependencies
+├── README.md                # Documentation
+├── LICENSE                  # License file
+├── logo.png                 # Application logo
 │
-├── modules/                 # Core application modules
-│   ├── __init__.py
-│   ├── detector.py          # YOLO detection wrapper
-│   ├── tracker.py           # Movement tracking logic
-│   └── logger.py            # Data logging to text files
+├── src/                     # Source code (all modules)
+│   ├── analytics/           # Analytics and charting
+│   │   ├── chart_ui.py
+│   │   ├── predictor.py
+│   │   └── stats_manager.py
+│   ├── biology/             # Biological entity detection
+│   │   ├── detector.py
+│   │   └── interface.py
+│   ├── chemistry/           # Chemistry simulation logic
+│   │   ├── controls.py
+│   │   └── logic.py
+│   ├── core/                # Core detection & tracking modules
+│   │   ├── bio_entity.py
+│   │   ├── detector.py
+│   │   ├── logger.py
+│   │   ├── tracker.py
+│   │   ├── traditional_detector.py
+│   │   └── vision_manager.py
+│   ├── simulation/          # Simulation math engine
+│   │   └── math_engine.py
+│   ├── ui/                  # User interface components
+│   │   ├── main_window.py
+│   │   ├── video_widget.py
+│   │   ├── control_panel.py
+│   │   └── analytics_widget.py
+│   └── utils/               # Utility functions
+│       ├── data_logger.py
+│       └── visualizer.py
+│
+├── configs/                 # Additional configuration files
+│   ├── config.yaml
+│   └── high_sensitivity_config.py
+│
+├── scripts/                 # Analysis and utility scripts
+│   ├── analyze_cells.py
+│   ├── analyze_per_second.py
+│   └── count_cells_per_frame.py
+│
+├── tests/                   # Test files and experiments
+│   ├── test_ali.py
+│   └── computer_vision/     # Computer vision tests
 │
 ├── assets/                  # Static files
-│   ├── models/
-│   │   ├── best.pt          # Your trained YOLO11 model (required)
-│   │   └── README.md
-│   └── input_videos/        # Place test videos here
-│       └── README.md
+│   ├── input_videos/        # Place test videos here
+│   └── models/              # Pre-trained models
 │
-├── logs/                    # Generated log files
-│   ├── YYYY-MM-DD_counts.txt     # Cell count summaries
-│   ├── YYYY-MM-DD_movement.txt   # Movement details
-│   └── README.md
+├── data/                    # Data files and outputs
+│   ├── input_samples/
+│   └── outputs/             # Generated analysis results
+│
+├── models/                  # YOLO model files
+│   └── yolo11n.pt
 │
 └── training_workspace/      # Model training environment
-    ├── train_model.py       # Training script
-    ├── data.yaml            # YOLO dataset configuration
-    ├── README.md
-    └── dataset/             # Your training images/labels
-        ├── images/
-        │   ├── train/
-        │   └── val/
-        └── labels/
-            ├── train/
-            └── val/
+    ├── train_model.py
+    ├── data.yaml
+    └── dataset/             # Training images/labels
 ```
 
 ---
