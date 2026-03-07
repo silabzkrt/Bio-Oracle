@@ -9,23 +9,26 @@ from PyQt6.QtCore import QTimer, Qt
 from PyQt6.QtGui import QAction
 import cv2
 import os
+import random
 
 from .video_widget import VideoWidget
 from .control_panel import ControlPanel
 from .analytics_widget import AnalyticsWidget
+
 
 # Import modules
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 try:
-    from modules import CellDetector, CellTracker, DataLogger
+    from modules.detector import CellDetector
+    from modules.tracker import CellTracker
+    from modules.logger import DataLogger
     import config
     MODULES_AVAILABLE = True
 except ImportError:
     MODULES_AVAILABLE = False
     print("Warning: Detection modules not available. Running in demo mode.")
-
 
 class BioOracleWindow(QMainWindow):
     """Main application window"""
@@ -184,7 +187,6 @@ class BioOracleWindow(QMainWindow):
         if self.video_capture:
             self.video_capture.release()
         
-        # Open new video
         self.video_capture = cv2.VideoCapture(video_path)
         
         if not self.video_capture.isOpened():
@@ -194,7 +196,6 @@ class BioOracleWindow(QMainWindow):
         self.current_video_path = video_path
         self.frame_count = 0
         
-        # Initialize detection modules if available
         if MODULES_AVAILABLE:
             try:
                 self.detector = CellDetector(
@@ -221,10 +222,8 @@ class BioOracleWindow(QMainWindow):
         else:
             self.status_bar.showMessage(f"Loaded: {os.path.basename(video_path)} | Demo Mode")
         
-        # Clear analytics
         self.analytics_widget.clear_data()
         
-        # Start playback
         self.start_playback()
     
     def start_playback(self):
@@ -257,118 +256,119 @@ class BioOracleWindow(QMainWindow):
         self.video_widget.clear_frame()
         self.frame_count = 0
         self.status_bar.showMessage("Stopped")
-    
+
     def update_frame(self):
-        """Update video frame and perform detection"""
-        if not self.video_capture or not self.video_capture.isOpened():
-            self.stop_video()
-            return
-        
-        ret, frame = self.video_capture.read()
-        
-        if not ret:
-            # Video ended, loop back
-            self.video_capture.set(cv2.CAP_PROP_POS_FRAMES, 0)
-            self.frame_count = 0
-            return
-        
-        self.frame_count += 1
-        
-        # Perform detection if modules available
-        cell_count = 0
-        
-        if self.detector and self.tracker:
-            try:
-                # Detect cells
-                detections = self.detector.detect(frame)
-                
-                # Track cells
-                tracked_detections = self.tracker.update(detections)
-                
-                # Apply environmental effects (simulation)
-                tracked_detections = self.apply_environmental_effects(tracked_detections)
-                
-                # Draw detections on frame
-                for det in tracked_detections:
-                    x1, y1, x2, y2 = det['bbox']
-                    status = det.get('status', 'unknown')
+            """Update video frame and perform detection with Environmental Stress"""
+            if not self.video_capture or not self.video_capture.isOpened():
+                self.stop_video()
+                return
+            
+            ret, frame = self.video_capture.read()
+            
+            if not ret:
+                self.video_capture.set(cv2.CAP_PROP_POS_FRAMES, 0)
+                self.frame_count = 0
+                return
+            
+            self.frame_count += 1
+            cell_count = 0
+            
+            if self.detector and self.tracker:
+                try:
+                    detections = self.detector.detect(frame)
+                    tracked_detections = self.tracker.update(detections)
+
+                    surviving_detections = self.apply_environmental_effects(tracked_detections)
+                    cell_count = len(surviving_detections)
+
+                    import random
+                    for det in surviving_detections:
+                        x1, y1, x2, y2 = det['bbox']
+                        
+                        jitter_range = max(0, int((self.temperature - 25) / 5))
+                        if jitter_range > 0:
+                            x1 += random.randint(-jitter_range, jitter_range)
+                            y1 += random.randint(-jitter_range, jitter_range)
+                            x2 += random.randint(-jitter_range, jitter_range)
+                            y2 += random.randint(-jitter_range, jitter_range)
+
+                        status = det.get('status', 'unknown')
+                        color = config.COLOR_MOVING if status == 'moving' else config.COLOR_STAYING
+                        
+                        cv2.rectangle(frame, (x1, y1), (x2, y2), color, config.BOX_THICKNESS)
+                        cv2.putText(frame, f"ID:{det['track_id']} {status}", (x1, y1 - 10),
+                                    config.FONT, config.FONT_SCALE, color, config.FONT_THICKNESS)
                     
-                    # Choose color based on status
-                    if status == 'moving':
-                        color = config.COLOR_MOVING
-                    elif status == 'staying':
-                        color = config.COLOR_STAYING
-                    else:
-                        color = config.COLOR_UNKNOWN
+                    if config.ENABLE_LOGGING and self.logger:
+                        counts = self.tracker.get_counts() 
+                        self.logger.log_counts(self.frame_count, counts, len(detections), self.toxicity, self.temperature)
                     
-                    # Draw bounding box
-                    cv2.rectangle(frame, (x1, y1), (x2, y2), color, config.BOX_THICKNESS)
-                    
-                    # Draw label
-                    label = f"ID:{det['track_id']} {status}"
-                    cv2.putText(
-                        frame, label, (x1, y1 - 10),
-                        config.FONT, config.FONT_SCALE, color, config.FONT_THICKNESS
-                    )
-                
-                cell_count = len(tracked_detections)
-                
-                # Log data
-                if config.ENABLE_LOGGING and self.logger:
-                    counts = self.tracker.get_counts()
-                    self.logger.log_counts(self.frame_count, counts, len(detections))
-                
-            except Exception as e:
-                print(f"Detection error: {e}")
-                cell_count = 0
-        else:
-            # Demo mode - simulate cell count
-            import random
-            cell_count = random.randint(20, 80)
-        
-        # Update display
-        self.video_widget.update_frame(frame)
-        
-        # Update analytics
-        self.analytics_widget.update_data(cell_count)
-        
-        # Update status bar
-        self.status_bar.showMessage(
-            f"Frame: {self.frame_count} | Cells: {cell_count} | "
-            f"Toxicity: {self.toxicity}% | Temp: {self.temperature}°C"
-        )
-    
+                except Exception as e:
+                    print(f"Detection error: {e}")
+                    cell_count = 0
+            else:
+                import random
+                cell_count = random.randint(20, 80)
+            
+            self.video_widget.update_frame(frame)
+            self.analytics_widget.update_data(cell_count)
+            
+            status_text = f"Frame: {self.frame_count} | Cells: {cell_count} | Toxicity: {self.toxicity}% | Temp: {self.temperature}°C"
+            self.status_bar.showMessage(status_text)
+
+            if self.toxicity > 75:
+                self.status_bar.setStyleSheet("background-color: #ff0000; color: white; font-weight: bold;")
+            elif self.toxicity > 40:
+                self.status_bar.setStyleSheet("background-color: #ffff00; color: black;")
+            else:
+                self.status_bar.setStyleSheet("")
+
     def apply_environmental_effects(self, detections):
         """
-        Simulate environmental effects on cells
-        This is a placeholder for future simulation logic
+        Chemist Logic: Simulates cell death based on toxicity levels.
         """
-        # TODO: Implement actual simulation based on toxicity and temperature
-        # For now, just return detections as-is
-        return detections
+        tox_level = self.toxicity 
+        
+        survivors = []
+        for det in detections:
+            death_chance = (tox_level / 333.3) 
+            
+            if random.random() > death_chance:
+                survivors.append(det)
+                
+        return survivors
     
     def on_toxicity_changed(self, value):
-        """Handle toxicity slider change"""
+        """Handle toxicity slider change and reset UI warnings"""
         self.toxicity = value
+        self.status_bar.setStyleSheet("")        
+        self.status_bar.showMessage(f"Toxicity adjusted to {value}%")
     
     def on_temperature_changed(self, value):
         """Handle temperature slider change"""
         self.temperature = value
-    
+
     def on_kill_button_clicked(self):
-        """Handle kill button click"""
+        """Handle kill button click - Chemist Logic"""
         reply = QMessageBox.question(
             self,
-            'Confirm',
-            'Are you sure you want to kill all cells?',
+            'Confirm Intervention',
+            'Are you sure you want to release the neutralizing agent and kill all cells?',
             QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
             QMessageBox.StandardButton.No
         )
         
         if reply == QMessageBox.StandardButton.Yes:
-            # TODO: Implement kill logic
-            self.status_bar.showMessage("⚠️ Kill function activated!")
-            QMessageBox.information(self, "Info", "Kill function activated! (Simulation)")
+            if self.tracker:
+                self.tracker.tracks = {} 
+            
+            self.status_bar.showMessage("Biological Wipe Complete: 0 Cells remaining.")
+            self.status_bar.setStyleSheet("background-color: #770000; color: white; font-weight: bold;")
+            
+            if self.analytics_widget:
+                self.analytics_widget.clear_data()
+            
+            QMessageBox.information(self, "Protocol X", "Neutralizing agent released. All tracks cleared.")
     
     def show_about(self):
         """Show about dialog"""
